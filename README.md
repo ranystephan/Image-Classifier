@@ -19,21 +19,17 @@ pip install -r requirements.txt
 
 ## Usage
 
-To use the image classifier, first clone the repository to your local machine. Then, navigate to the repository directory and run the following command:
-
-python predict.py --image path/to/image.jpg --model path/to/model.h5 --labels path/to/labels.txt
+To use the image classifier, first clone the repository to your local machine. Then, navigate to the repository and open the image_classifier.ipynb using either Jupyter Lab or Jupyter Notebook.
 
 
-This will load the model from the specified file, predict the class of the input image, and output the result to the console.
+This will load the model from the specified file.
 
 ## Training
 
 To train the image classifier on a custom dataset, you will need to prepare the data in the format expected by Keras. This typically involves organizing the images into subdirectories based on their class, as described in the Keras documentation.
 
-Once the data is prepared, you can train the model using the `train.py` script. This script provides several command-line options for configuring the training process, such as the number of epochs, the learning rate, and the batch size.
+Once the data is prepared, you can train the model using the python script. This script provides several command-line options for configuring the training process, such as the number of epochs, the learning rate, and the batch size.
 
-For example, to train the model on a dataset stored in the `data` directory for 10 epochs with a batch size of 32, you can run the following command:
-python train.py --data_dir data --epochs 10 --batch_size 32
 
 
 ## Contributing
